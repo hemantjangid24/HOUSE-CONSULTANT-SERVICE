@@ -1,0 +1,196 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+/* google font  */
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+   
+
+}
+/* product  */
+#product {
+    width: 100%;
+    max-width: 1980px;
+    padding-block: 4rem;
+}
+
+.product-info {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.product-info .product-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #505050;
+    width: 70%;
+}
+
+.product-btn {
+    background-color: transparent;
+    color: #505050;
+    font-size: 1.5rem;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+    transition: color 300ms;
+}
+
+.product-btn:hover {
+    color: #000;
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* Set the desired width for the container */
+    height: 200px; /* Set the desired height for the container */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(14, 10, 10);
+    color: white;
+    padding: 1px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#product .container {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-card {
+    flex-basis: 28%;
+    /* background-color: royalblue; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* border: 0.5px solid rgba(80, 80, 80, 0.30); */
+    box-shadow: 0px 5px 10px rgba(80, 80, 80, 0.20);
+    padding-bottom: 1rem;
+    overflow: hidden;
+
+}
+
+.product-card:hover .product-img{
+    transform: scale(1.035);
+}
+
+.product-img {
+    flex-basis: 100%;
+    object-fit: cover;
+    transition:  300ms ease;
+}
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    /* background-color: red; */
+    width: 100%;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.card-info-content {
+    display: flex;
+    text-transform: uppercase;
+    min-height: 20px;
+    justify-self: center;
+    align-items: center;
+    gap: 0.5rem;
+    /* background-color: yellow; */
+    width: 90%;
+    margin-inline: auto;
+
+}
+
+.content {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: start;
+    min-height: 20px;
+    align-items: center;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-inline: auto;
+
+    gap: 10px;
+
+}
+
+.price p {
+    font-size: 1.5rem;
+    flex-basis: 30%;
+
+}
+
+.booking-btn {
+    color: #fff;
+    background-color: #505050;
+    flex-basis: 50%;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+
+/* product  */

@@ -1,0 +1,26 @@
+@media (max-width:600px)
+   {
+    .product-info{
+       width: 90%;
+       flex-direction: column;
+       justify-content: center;
+       /* background-color: red; */
+    }
+    
+.product-info .product-title{
+        font-size: 1.5rem;
+        width: 100%;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .product-btn{
+        width: 350px;
+    }
+    #product .container{
+        gap: 2rem;
+    }
+
+    .product-card{
+        flex-basis: 100%;
+    }
+}

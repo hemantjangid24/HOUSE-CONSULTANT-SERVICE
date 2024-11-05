@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="text-center">
+			<h1>Contact Us</h1>
+			<div>
+				Are you ready to take the next step in your homeownership journey? <div>Contact me today for a free consultation and discover how I can help you achieve your goals."</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="col-1">
+				<div class="address-line">
+					<img alt="location" src="image/marker.png" class="icon">
+					<div class="contact-info">
+						<div class="contact-info-title">Address</div>
+						<div>ISI 6 , Near World Trade Park,</div>
+						<div>Jaipur, Rajasthan</div>
+						<div>302033.</div>
+					</div>
+				</div>
+				<div class="address-line">
+					<img alt="location" src="image/phone.png" class="icon">
+					<div class="contact-info">
+						<div class="contact-info-title">Phone</div>
+						<div>0141-2345632.</div>
+					</div>
+				</div>
+				<div class="address-line">
+					<img alt="location" src="image/mail.png" class="icon">
+					<div class="contact-info">
+						<div class="contact-info-title">Email</div>
+						<div>houseconsultant.ser.@gmail.com</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<form action="connect.php" method="post">
+					<div class="form-container">
+						<h2>Send Message</h2>
+						<div class="form-row">
+							<label for="fullname">Full Name</label>
+							<div>
+								<input type="text" class="form-field" id="fullname" name="fullname">
+							</div>
+						</div>
+						<div class="form-row">
+							<label for="email">Email</label>
+							<div>
+								<input type="text" class="form-field" id="email" name="email">
+							</div>
+						</div>
+						<div class="form-row">
+							<label for="message">Type your message...</label>
+							<div>
+								<input type="text" class="form-field" id="message" name="message">
+							</div>
+						</div>
+						<input type="button" class="send-btn" value="Send" name="send">
+					</div>
+				</form>
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
