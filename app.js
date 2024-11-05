@@ -55,6 +55,3 @@ TweenMax.from('.product-card',7,{
     opacity:0,
     ease:Expo.easeInOut
     })
-
-
-    

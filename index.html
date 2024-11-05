@@ -1,72 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Contact Form</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOUSE CONSULTANT SERVICE</title>
+    <!-- custom css link  -->
+   <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
+    <!-- custom css link  -->
 </head>
+
 <body>
-	<div class="container">
-		<div class="text-center">
-			<h1>Contact Us</h1>
-			<div>
-				Are you ready to take the next step in your homeownership journey? <div>Contact me today for a free consultation and discover how I can help you achieve your goals."</div>
-			</div>
-		</div>
-		<div class="content">
-			<div class="col-1">
-				<div class="address-line">
-					<img alt="location" src="image/marker.png" class="icon">
-					<div class="contact-info">
-						<div class="contact-info-title">Address</div>
-						<div>ISI 6 , Near World Trade Park,</div>
-						<div>Jaipur, Rajasthan</div>
-						<div>302033.</div>
-					</div>
-				</div>
-				<div class="address-line">
-					<img alt="location" src="image/phone.png" class="icon">
-					<div class="contact-info">
-						<div class="contact-info-title">Phone</div>
-						<div>0141-2345632.</div>
-					</div>
-				</div>
-				<div class="address-line">
-					<img alt="location" src="image/mail.png" class="icon">
-					<div class="contact-info">
-						<div class="contact-info-title">Email</div>
-						<div>houseconsultant.ser.@gmail.com</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-2">
-				<form action="connect.php" method="post">
-					<div class="form-container">
-						<h2>Send Message</h2>
-						<div class="form-row">
-							<label for="fullname">Full Name</label>
-							<div>
-								<input type="text" class="form-field" id="fullname" name="fullname">
-							</div>
-						</div>
-						<div class="form-row">
-							<label for="email">Email</label>
-							<div>
-								<input type="text" class="form-field" id="email" name="email">
-							</div>
-						</div>
-						<div class="form-row">
-							<label for="message">Type your message...</label>
-							<div>
-								<input type="text" class="form-field" id="message" name="message">
-							</div>
-						</div>
-						<input type="button" class="send-btn" value="Send" name="send">
-					</div>
-				</form>
-			
-			</div>
-		</div>
-	</div>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                Indian.Home
+            </div>
+
+            <ul class="nav-list ">
+                <li><a href="#" class="list-item">Home</a></li>
+                <li><a href="/contact/index.html" class="list-item">Property</a></li>
+                <li><a href="#" class="list-item product">Service</a></li>
+                <li><a href="#" class="list-item  ">About us</a></li>
+                <li><a href="/contact/index.html" class="list-item Contact ">Contact us</a></li>
+            </ul>
+
+            <div class="mobile-menu" onclick="showMenu()">  
+                <div class="line line1 "></div>
+                <div class="line line2 "></div>
+                <div class="line line3 "></div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar  -->
+
+    <!-- header  -->
+    <section class="header">
+        <div class="container">
+            <div class="header-info">
+                <h1 class="header-headline">your perfect house waiting for you </h1>
+                <p class="header-subtitle">
+                    we help you get your dream house with us.
+                    We are professional house consultant
+                </p>
+
+                <a href="explore/explore.html" target="_blank" class="cta">Explore Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- header  -->
+
+    <!-- search box -->
+    <form>
+        <div class="container">
+            <div class="input">
+                <input type="text" placeholder="loaction">
+                <img src="./images/location.svg" alt="">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="type">
+                <img src="./images/home1.svg" alt="" id="">
+            </div>
+            <div class="input">
+                <input type="text" placeholder="budget">
+                <img src="./images/money.svg" alt="">
+            </div>
+            <div class="input search">
+                <input type="submit" value="search now">
+
+            </div>
+        </div>
+    </form>
+    <!-- search box -->
+     
+
+    <!-- product  -->
+    <section id="product">
+        <div class="product-info">
+            <h2 class="product-title">
+                our Popular Properties
+            </h2>
+
+            <a href="/explore/explore.html" class="product-btn"  target="_blank">
+                Explore All
+                <img src="./images/arrow.svg" alt="">
+            </a>
+        </div>
+        <div class="container">
+            <div class="product-card">
+                <img src="./images/house1.jpeg" alt="" class="product-img">
+                <div class="tag">
+                    <span>SALE</span>
+                </div>
+                <div class="card-info">
+
+                    <div class="card-info-content">
+                        <img src="./images/location.svg" alt="">
+                        <p class="loaction-name">Sector 32, Vidhyadhar Nagar, Jaipur</p>
+                    </div>
+                    <div class="card-info-content">
+                        <div class="content">
+                            <img src="./images/bed.svg" alt="">
+                            <p>6 Bed</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/size.svg" alt="">
+                            <p>30x35ft</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/area.svg" alt="">
+                            <p>2000sqft</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>₹60 lac</p>
+                        <a href="" class="booking-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./images/house2.jpeg" alt="" class="product-img">
+                <div class="tag">
+                    <span>SALE</span>
+                </div>
+                <div class="card-info">
+
+                    <div class="card-info-content">
+                        <img src="./images/location.svg" alt="">
+                        <p class="loaction-name">Patrakar Road , Mansarover, Jaipur</p>
+                    </div>
+                    <div class="card-info-content">
+                        <div class="content">
+                            <img src="./images/bed.svg" alt="">
+                            <p>4 Bed</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/size.svg" alt="">
+                            <p>20x30ft</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/area.svg" alt="">
+                            <p>1200sqft</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>₹56 lac</p>
+                        <a href="" class="booking-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./images/plot1.jpg" alt="" class="product-img">
+                <div class="tag">
+                    <span>SALE</span>
+                </div>
+                <div class="card-info">
+
+                    <div class="card-info-content">
+                        <img src="./images/location.svg" alt="">
+                        <p class="loaction-name">Goner Road , Sitapura, Jaipur</p>
+                    </div>
+                    <div class="card-info-content">
+                        <div class="content">
+                            <img src="./images/bed.svg" alt="">
+                            <p>Plot</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/size.svg" alt="">
+                            <p>30x45ft</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/area.svg" alt="">
+                            <p>1350sqft</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>₹20 lac</p>
+                        <a href="" class="booking-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./images/office1.jpg" alt="" class="product-img">
+                <div class="tag">
+                    <span>RENT</span>
+                </div>
+                <div class="card-info">
+
+                    <div class="card-info-content">
+                        <img src="./images/location.svg" alt="">
+                        <p class="loaction-name">Iskon Road , Mansarover Extension, Jaipur</p>
+                    </div>
+                    <div class="card-info-content">
+                        <div class="content">
+                            <img src="./images/bed.svg" alt="">
+                            <p>2 Halls</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/size.svg" alt="">
+                            <p>50x80ft</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/area.svg" alt="">
+                            <p>8000sqft</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>₹50.k</p>
+                        <a href="" class="booking-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./images/office2.0.jpg" alt="placeholder Image" class="product-img">
+                <div class="tag">
+                    <span>RENT</span>
+                </div>
+                <div class="card-info">
+
+                    <div class="card-info-content">
+                        <img src="./images/location.svg" alt="">
+                        <p class="loaction-name">Nirman Nagar , Mansarover Road, Jaipur</p>
+                    </div>
+                    <div class="card-info-content">
+                        <div class="content">
+                            <img src="./images/bed.svg" alt="">
+                            <p>2 Halls</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/size.svg" alt="">
+                            <p>40x80ft</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/area.svg" alt="">
+                            <p>6400ft</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>₹30.k</p>
+                        <a href="" class="booking-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./images/ware1.jpg" alt="" class="product-img">
+                <div class="tag">
+                    <span>RENT</span>
+                </div>
+                <div class="card-info">
+
+                    <div class="card-info-content">
+                        <img src="./images/location.svg" alt="">
+                        <p class="loaction-name">Sector 8 ,Pratap Nagar, Goner Road , Jaipur</p>
+                    </div>
+                    <div class="card-info-content">
+                        <div class="content">
+                            <img src="./images/bed.svg" alt="">
+                            <p>6 Cabin</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/size.svg" alt="">
+                            <p>150x100ft</p>
+                        </div>
+                        <div class="content">
+                            <img src="./images/area.svg" alt="">
+                            <p>15000sqft</p>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <p>₹90.k</p>
+                        <a href="" class="booking-btn">Book Now</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product  -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h4>About Us</h4>
+            <p>We are a company dedicated to providing the best services.</p>
+            
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>Email: info@hcs.com</p>
+            <p>Phone: +0141-2349561</p>
+          </div>
+          <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="https://www.facebook.com/house-consultant-service">Facebook</a>
+            <a href="https://www.twitter.com/house-consultant-service">Twitter</a>
+            <a href="https://www.Instagram.com/house-consultant-service">Instagram</a>
+            <a href="https://www.linkedin.com/house-consultant-service">linkedin</a>
+            <a href="https://www.google.com/house-consultant-service">Website</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Your Company. All rights reserved.</p>
+          <p>Designed by 🙋‍♂️ Hemant Jangid</p>
+        </div>
+      </footer>
+
+    
+    
+    <!-- gsap link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- gsap link  -->
+
+    <script src="./app.js"></script>
 </body>
+
 </html>
